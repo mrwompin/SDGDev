@@ -1,38 +1,55 @@
-<!DOCTYPE html/>
-<html lang="en-US"/>
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8"/>
   <title>SDG Home</title>
+  <link href="css/SDGstyle.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
   
   <header>
-    <img src="img/SDGOne.png" alt="Software Development Guild" width="230px"/>
+    <img src="img/SDGOne.png" alt="Software Development Guild" />
   </header>
   
   <nav>
     <ul>
-      <li>Home</li>
+      <a id="nav-index" href="../index.html">Home</a>
+      <a id="nav-about" href="html/about.html">About</a>
+      <a id="nav-projects" href="html/projects.html">Projects</a>
     </ul>
   </nav>
 
-  <section>
-    <h2>Welcome!</h2>
-    <p>
-      The Software Development Guild is a gathering of student software developers who seek to further advance software craft through collaboration outside of the classroom. The Guild serves as a meeting place for students of all backgrounds and understanding who seek to better understand software components and the development cycle. 
-    </p>
-    <p>
-      The Guild meets on Tusedays during the Spring and Fall semesters, meetings are from <time>4pm to 5pm</time>. To join the Guild just come to a meeting! Don't let busy schedules stop you, if you would like to join but can't make it to the meetings contact the project manager at <a href="mailto:MR/MRS_Manager@dudeguy.com">MR/MRS_Manager@dudeguy.com</a> to see what you can do to help on our next project!
-    </p>
+  <section class="left-pane">
+    <article>  
+      <h2>The Guild</h2>
+      <section class="text">
+        <p>
+            The Software Development Guild is a gathering of student software developers who seek to further advance software craft through collaboration outside of the classroom. The Guild serves as a meeting place for students of all backgrounds and understanding who seek to better understand software components and the development cycle. 
+        </p>
+      </section>
+      <section class="text">
+        <p>
+          The Guild meets on Tusedays during the Spring and Fall semesters, meetings are from <time>4pm to 5pm</time>. To join the Guild just come to a meeting! Don't let busy schedules stop you, if you would like to join but can't make it to the meetings contact the project manager at <a href="mailto:MR/MRS_Manager@dudeguy.com">MR/MRS_Manager@dudeguy.com</a> to see what you can do to help on our next project!
+        </p>
+      </section>
+    </article>
+    <aside>
+      <h3>Current Members</h3>
+      <p>Matt Markwald</p>
+      <p>Caleb Wagner</p>
+   </aside>
   </section>
 
   <footer>
-    <ul>
+    <section id="contact">
       <h4>Contact:</h4>
       <p>President Namey McNamerson</p>
-      <a href="mailto:MR_prezzz@dudeguy.com">MR_prezzz@dudeguy.com</a>
-    </ul>
-    <p>&copy; 2017 Software Develpment Guild</p>
+      <p><a href="mailto:MR_prezzz@dudeguy.com">MR_prezzz@dudeguy.com</a></p>
+    </section>
+    <section id="copyright">
+      <p>&copy; 2017 Software Develpment Guild</p>
+    </section>
   </footer>
 
 </body>

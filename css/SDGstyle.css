@@ -1,0 +1,167 @@
+/*CSS Page Software Guild*/
+body 
+{
+	font-size: 16pt;
+	font-family: Calibri, Candara, Segoe, 
+	'Segoe UI', Optima, Arial, sans-serif;
+	background-color:white;
+}
+header
+{
+	text-align: center;
+	background-color: black;
+}
+nav
+{
+	text-align: center;
+	background-color: black;
+}
+nav a
+{
+	color: white;
+	text-decoration: none;
+	margin-right: 15px;
+	font-size: 1.4em;
+}
+.left-pane
+{
+	
+	margin: 0 auto;
+	text-align: center;
+	display: inline-flex;
+	
+}
+
+aside
+{
+	float:left;
+	width:40%;
+	font-size: .9em;
+}
+aside *
+{
+	margin: 0;
+	text-align: left;
+
+}
+
+article
+{
+	display: block;
+	float:left;
+	font-size: 1.5em;
+}
+
+article *
+{
+	margin:0;
+	padding:0;
+}
+article p
+{
+	font-size: .85em;
+	background-color: white;
+	padding: 10px;
+	max-width: 70%;
+	margin:0 auto;
+	text-align: left;
+	text-indent: 16px;
+	margin-bottom: 10px;
+}
+footer *
+{
+	margin: 0;
+	font-size: .8em;
+	color: white;
+	background-color: black;
+	padding: 0;
+}
+footer
+{
+	text-align: center;
+	
+	background-color: black;
+}
+
+footer ul
+{
+	margin-bottom: 5px;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+	width: 460px;
+}
+@media screen and (max-width:680px)
+{
+	aside
+	{
+		float:initial;
+		width: 50%;
+		margin:0 auto;
+		margin-bottom: 15px;
+	}
+
+	aside p 
+	{
+		text-align: center;
+		font-size: .75em;
+
+	}
+	aside h3 
+	{
+		text-align: center;
+		font-size: .95em;
+	}
+	article
+	{
+		font-size: 1em;
+	}
+	.left-pane
+	{
+		display: inline-block;
+	}
+	footer
+	{
+		font-size: .65em;
+		display: flex;
+		width: 100%;
+		position: relative;
+		padding-left: 7px;
+
+	}
+	footer #contact
+	{
+		display: run-in;
+		float:left;
+		text-align: left;
+		margin-left: 2px;
+
+		
+		
+	}
+
+	#contact a
+	{
+		text-align: right;
+	}
+	footer #copyright
+	{
+		
+		
+		bottom: 0;
+		position: absolute;
+	}
+}
+
+@media screen and (max-width: 375px)
+{
+	nav
+	{
+		font-size: .65em;
+	}
+}
+
+
