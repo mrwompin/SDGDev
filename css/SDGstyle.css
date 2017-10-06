@@ -4,7 +4,14 @@ body
 	font-size: 16pt;
 	font-family: Calibri, Candara, Segoe, 
 	'Segoe UI', Optima, Arial, sans-serif;
-	background-color:white;
+	background-color: #447B87FF;
+	background-image: url("../img/bg3.png");
+}
+main
+{
+	background-color: white;
+	width: 90%;
+	margin:0 auto;
 }
 header
 {
@@ -35,7 +42,7 @@ nav a
 aside
 {
 	float:left;
-	width:40%;
+	width: 20%;
 	font-size: .9em;
 }
 aside *
@@ -45,9 +52,14 @@ aside *
 
 }
 
+.text
+{
+	background-color: white;
+}
+
 article
 {
-	display: block;
+	
 	float:left;
 	font-size: 1.5em;
 }
@@ -62,7 +74,7 @@ article p
 	font-size: .85em;
 	background-color: white;
 	padding: 10px;
-	max-width: 70%;
+	max-width: 40%;
 	margin:0 auto;
 	text-align: left;
 	text-indent: 16px;
@@ -118,6 +130,11 @@ img
 	.left-pane
 	{
 		display: inline-block;
+
+	}
+	article h2
+	{
+		background-color: white;
 	}
 	article p
 	{
