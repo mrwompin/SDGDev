@@ -1,17 +1,22 @@
 /*CSS Page Software Guild*/
+
 body 
 {
 	font-size: 16pt;
 	font-family: Calibri, Candara, Segoe, 
 	'Segoe UI', Optima, Arial, sans-serif;
-	background-color: #447B87FF;
+	background-color: #08353EFF;
 	background-image: url("../img/bg3.png");
+	min-width:270px;
 }
 #wrapper
 {
 	background-color:#ECF7F7FF;
 	max-width: 70%;
 	margin:0 auto;
+	border: solid black;
+	border-width: 2px 4px 2px 4px;
+	border-radius: 5px 5px 5px 5px;
 }
 header
 {
@@ -35,7 +40,7 @@ nav a
 	margin: 0 auto;
 	text-align: center;
 	display: inline-flex;
-	border-left: solid 2px black;
+	
 }
 
 aside
@@ -94,6 +99,7 @@ footer
 {
 	text-align: center;
 	background-color: black;
+	max-width: 100%;
 }
 
 img
@@ -114,7 +120,7 @@ img
 		max-width: 100%;
 		margin:0 auto;
 		border-collapse: collapse;
-		border: solid black 2px;
+		
 	}
 	article
 	{
@@ -159,7 +165,6 @@ img
 	{
 		font-size: .85em;
 		display: flex;
-		width: 100%;
 		position: relative;
 		padding-left: 7px;
 
