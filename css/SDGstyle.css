@@ -74,6 +74,8 @@ aside
 	font-size: .9em;
 	padding: 15px;
 	color: white;
+	background-color: #BEDFD8;
+	border-top: #08353EFF solid 2px;
 
 }
 aside p
@@ -88,7 +90,7 @@ article
 	font-size: 1.5em;
 	background-color: #ADD1CC;
 	border: solid #08353EFF 2px;
-	border-width: 2px 2px 0 0;
+	border-width: 2px 0 0 0;
 	
 }
 
@@ -192,7 +194,7 @@ img
 		float:initial;
 		margin:0 auto;
 		padding: 0;
-		background-color: none;
+		background-color: initial;
 		border: initial;
 	}
 
