@@ -74,7 +74,7 @@ article p
 	font-size: .85em;
 	background-color: white;
 	padding: 10px;
-	max-width: 40%;
+	max-width: 50%;
 	margin:0 auto;
 	text-align: left;
 	text-indent: 16px;
@@ -138,12 +138,12 @@ img
 	}
 	article p
 	{
-		max-width: 85%;
+		max-width: 75%;
 		font-size: .75em;
 	}
 	footer
 	{
-		font-size: .65em;
+		font-size: .85em;
 		display: flex;
 		width: 100%;
 		position: relative;
