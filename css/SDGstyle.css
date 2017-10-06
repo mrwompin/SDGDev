@@ -69,7 +69,7 @@ aside *
 aside
 {
 	float:left;
-	max-width: 20%;
+	max-width: 14%;
 	font-size: .9em;
 	padding: 15px;
 	color: #686868FF;
@@ -96,6 +96,7 @@ article a
 {
 	color:#707070FF;
 	text-decoration: none;
+
 }
 
 article *
@@ -112,6 +113,15 @@ article p
 	text-align: left;
 	text-indent: 16px;
 	
+}
+article .about 
+{
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+article .meeting-info
+{
+	margin-bottom: 10%;
 }
 footer *
 {
