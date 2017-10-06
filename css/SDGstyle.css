@@ -11,15 +11,17 @@ body
 	background-color: #08353EFF;
 	background-image: url("../img/bg3.png");
 	min-width:270px;
+	margin: 0;
 }
 #wrapper
 {
-	max-width: 70%;
+	max-width: 90%;
 	margin:0 auto;
 	border: solid black;
 	border-width: 2px 4px 2px 4px;
 	border-radius: 5px 5px 5px 5px;
 	background-color: #0C525EFF;
+
 }
 
 .font-size-down-center
@@ -55,7 +57,7 @@ nav a
 }
 .content
 {
-	margin: 0 auto;
+	
 	text-align: center;
 	display: inline-flex;
 	/*background-color:#08353EFF;*/
@@ -74,9 +76,9 @@ aside
 	font-size: .9em;
 	padding: 15px;
 	color: white;
-	background-color: #BEDFD8;
+	background-color: #B1D7CD;
 	border-top: #08353EFF solid 2px;
-
+	
 }
 aside p
 {
@@ -121,6 +123,13 @@ article .about
 	margin-top: 5%;
 	margin-bottom: 10%;
 }
+.left-pane p
+{
+	max-width: 80%;
+	min-width: 65%;
+	margin: 0 auto;
+
+}
 article .meeting-info
 {
 	margin-bottom: 10%;
@@ -135,7 +144,7 @@ footer *
 }
 footer
 {
-	text-align: center;
+	
 	background-color: black;
 	max-width: 100%;
 }
@@ -165,7 +174,7 @@ img
 	height: auto;
 	width: 360px;
 }
-@media screen and (max-width: 1080px)
+@media screen and (max-width: 1200px)
 {
 	
 	#wrapper
@@ -220,6 +229,18 @@ img
 		text-align: right;
 	}
 	
+}
+@media screen and (max-width: 650px)
+{
+	#wrapper
+	{
+		max-width: 100%;
+		margin: 0;
+	}
+	body
+	{
+		margin: 0;
+	}
 }
 
 
