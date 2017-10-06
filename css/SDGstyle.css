@@ -9,8 +9,8 @@ body
 }
 #wrapper
 {
-	background-color: white;
-	width: 70%;
+	background-color:#ECF7F7FF;
+	max-width: 70%;
 	margin:0 auto;
 }
 header
@@ -32,11 +32,10 @@ nav a
 }
 .left-pane
 {
-	
 	margin: 0 auto;
 	text-align: center;
 	display: inline-flex;
-	
+	border-left: solid 2px black;
 }
 
 aside
@@ -44,8 +43,9 @@ aside
 	float:left;
 	width: 20%;
 	font-size: .9em;
-	background-color:#EDEDEDFF;
+	background-color:#DBEDEDFF;
 	padding: 5px;
+	border-right: solid black 2px;
 
 }
 aside *
@@ -75,13 +75,12 @@ article *
 article p
 {
 	font-size: .85em;
-	background-color: white;
 	padding: 10px;
 	max-width: 80%;
 	margin:0 auto;
 	text-align: left;
 	text-indent: 16px;
-	margin-bottom: 10px;
+	
 }
 footer *
 {
@@ -94,13 +93,7 @@ footer *
 footer
 {
 	text-align: center;
-	
 	background-color: black;
-}
-
-footer ul
-{
-	margin-bottom: 5px;
 }
 
 img
@@ -109,31 +102,33 @@ img
 	height: auto;
 	width: 460px;
 }
-@media screen and (max-width: 980px)
+@media screen and (max-width: 1080px)
 {
 	#wrapper
 	{
-		width: 90%;
+		max-width: 90%;
 	}
 	.left-pane
 	{
 		display: inline-block;
-		width: 100%;
+		max-width: 100%;
 		margin:0 auto;
-
-
+		border-collapse: collapse;
+		border: solid black 2px;
 	}
 	article
 	{
-		width: 100%;
+		max-width: 100%;
 	}
 	aside
 	{
+		display: inline-block;
 		float:initial;
-		width: 50%;
+		width: 100%;
 		margin:0 auto;
-		margin-bottom: 15px;
-		background-color: initial;
+		
+		border-right: initial;
+		padding: 0;
 	}
 
 	aside p 
@@ -152,18 +147,13 @@ img
 @media screen and (max-width:680px)
 {
 	
-	
-	article h2
-	{
-		background-color: white;
-	}
 	article p
 	{
 		font-size: .75em;
 	}
 	article a
 	{
-		font-size: .75em;
+		font-size: .65em;
 	}
 	footer
 	{
@@ -191,12 +181,9 @@ img
 		bottom: 0;
 		position: absolute;
 	}
-}
-@media screen and (max-width: 460px)
-{
-	article
+	nav
 	{
-		font-size: 1.2em;
+		font-size:.7em;
 	}
 }
 
@@ -208,7 +195,7 @@ img
 	}
 	nav
 	{
-		font-size: .65em;
+		font-size: .5em;
 	}
 }
 
