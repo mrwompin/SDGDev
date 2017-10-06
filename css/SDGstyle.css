@@ -11,12 +11,25 @@ body
 }
 #wrapper
 {
-	background-color:#ECF7F7FF;
 	max-width: 70%;
 	margin:0 auto;
 	border: solid black;
 	border-width: 2px 4px 2px 4px;
 	border-radius: 5px 5px 5px 5px;
+	background-color: #08353EFF;
+}
+
+.font-size-down-center
+{
+	font-size: .55em;
+	text-align: center;
+	display: inline;
+}
+.font-size-down
+{
+	font-size: .65em;
+	text-align: center;
+	
 }
 header
 {
@@ -25,8 +38,10 @@ header
 }
 nav
 {
+	color: white;
 	text-align: center;
-	background-color: black;
+	max-width: 100%;
+	
 }
 nav a
 {
@@ -35,22 +50,22 @@ nav a
 	margin-right: 15px;
 	font-size: 1.4em;
 }
-.left-pane
+.content
 {
 	margin: 0 auto;
 	text-align: center;
 	display: inline-flex;
-	
+	background-color:#08353EFF;
 }
 
 aside
 {
 	float:left;
-	width: 20%;
+	max-width: 20%;
 	font-size: .9em;
-	background-color:#DBEDEDFF;
-	padding: 5px;
-	border-right: solid black 2px;
+	padding: 15px;
+	color: #686868FF;
+	border-left: black solid 2px;
 
 }
 aside *
@@ -60,16 +75,20 @@ aside *
 
 }
 
-.text
-{
-	background-color: white;
-}
-
 article
 {
-	
 	float:left;
+	color: #262626FF;
 	font-size: 1.5em;
+	background-color: #D3E6F2FF;
+	border-top: solid black 2px;
+	border-bottom: solid black 2px;
+}
+
+article a
+{
+	color:#707070FF;
+	text-decoration: none;
 }
 
 article *
@@ -102,6 +121,25 @@ footer
 	max-width: 100%;
 }
 
+footer #copyright
+	{	
+		margin-right: 99%;
+		display: inline-flex;
+		max-width: 100%;
+		width: 400px;
+
+	}
+footer #contact
+	{	
+		display: inline-flex;
+		width: 900px;
+		max-width: 100%;
+
+	}
+#contact a
+{
+	text-decoration: none;
+}
 img
 {
 	max-width: 100%;
@@ -110,14 +148,18 @@ img
 }
 @media screen and (max-width: 1080px)
 {
+	
 	#wrapper
 	{
-		max-width: 90%;
+		min-width: 345px;
+		
 	}
-	.left-pane
+	
+	.content
 	{
 		display: inline-block;
 		max-width: 100%;
+		max-height: 100%;
 		margin:0 auto;
 		border-collapse: collapse;
 		
@@ -126,15 +168,19 @@ img
 	{
 		max-width: 100%;
 	}
+	article p
+	{
+		font-size: .95em;
+	}
 	aside
 	{
 		display: inline-block;
 		float:initial;
-		width: 100%;
+		max-width: 100%;
 		margin:0 auto;
-		
-		border-right: initial;
 		padding: 0;
+		background-color: initial;
+		border-left: initial;
 	}
 
 	aside p 
@@ -149,6 +195,16 @@ img
 		text-align: center;
 		font-size: .95em;
 	}
+	footer
+	{
+		font-size: 1em;
+	}
+
+	#contact a
+	{
+		text-align: right;
+	}
+	
 }
 @media screen and (max-width:680px)
 {
@@ -161,47 +217,12 @@ img
 	{
 		font-size: .65em;
 	}
-	footer
-	{
-		font-size: .85em;
-		display: flex;
-		position: relative;
-		padding-left: 7px;
-
-	}
-	footer #contact
-	{
-		display: run-in;
-		float:left;
-		text-align: left;
-		margin-left: 2px;
-	}
-
-	#contact a
-	{
-		text-align: right;
-	}
-	footer #copyright
-	{	
-		bottom: 0;
-		position: absolute;
-	}
+	
 	nav
 	{
 		font-size:.7em;
 	}
 }
 
-@media screen and (max-width: 375px)
-{
-	article
-	{
-		font-size: 1em;
-	}
-	nav
-	{
-		font-size: .5em;
-	}
-}
 
 
