@@ -19,7 +19,7 @@ body
 	border: solid black;
 	border-width: 2px 4px 2px 4px;
 	border-radius: 5px 5px 5px 5px;
-	background-color: #08353EFF;
+	background-color: #0C525EFF;
 }
 
 .font-size-down-center
@@ -58,7 +58,8 @@ nav a
 	margin: 0 auto;
 	text-align: center;
 	display: inline-flex;
-	background-color:#08353EFF;
+	/*background-color:#08353EFF;*/
+	
 }
 aside *
 {
@@ -72,8 +73,7 @@ aside
 	max-width: 14%;
 	font-size: .9em;
 	padding: 15px;
-	color: #686868FF;
-	border-bottom: black solid 2px;
+	color: white;
 
 }
 aside p
@@ -86,9 +86,9 @@ article
 	float:left;
 	color: #262626FF;
 	font-size: 1.5em;
-	background-color: #D3E6F2FF;
-	border: solid black 2px;
-	border-width: 2px 2px 2px 0;
+	background-color: #ADD1CC;
+	border: solid #08353EFF 2px;
+	border-width: 2px 2px 0 0;
 	
 }
 
