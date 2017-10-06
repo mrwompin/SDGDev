@@ -115,13 +115,14 @@ img
 		text-align: center;
 		font-size: .95em;
 	}
-	article
-	{
-		font-size: 1em;
-	}
 	.left-pane
 	{
 		display: inline-block;
+	}
+	article p
+	{
+		max-width: 85%;
+		font-size: .75em;
 	}
 	footer
 	{
@@ -138,9 +139,6 @@ img
 		float:left;
 		text-align: left;
 		margin-left: 2px;
-
-		
-		
 	}
 
 	#contact a
@@ -148,16 +146,25 @@ img
 		text-align: right;
 	}
 	footer #copyright
-	{
-		
-		
+	{	
 		bottom: 0;
 		position: absolute;
+	}
+}
+@media screen and (max-width: 460px)
+{
+	article
+	{
+		font-size: 1.2em;
 	}
 }
 
 @media screen and (max-width: 375px)
 {
+	article
+	{
+		font-size: 1em;
+	}
 	nav
 	{
 		font-size: .65em;
