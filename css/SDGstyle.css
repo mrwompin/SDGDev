@@ -148,12 +148,15 @@ article .about p
 }
 article .meeting-info
 {
-	
 	max-width: 70%;
 	margin: 0 auto;
-	margin-bottom: 2.5%;
+	margin-bottom: .5%;
 	text-align: center;
 
+}
+article .meeting-info p
+{
+	margin: 0;
 }
 footer *
 {
