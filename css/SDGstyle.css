@@ -9,7 +9,7 @@ body
 	font-family: "Courier New", Courier, monospace;
 	margin: 0;
 	background-color: #FFEEEC;
-	color:#707070FF;
+	color:#303030;	
 	font-size: 16pt;
 	
 }
@@ -23,22 +23,11 @@ body
 	background-color: #0C525EFF;
 }*/
 
-.font-size-down-center
-{
-	font-size: .55em;
-	text-align: center;
-	display: inline;
-}
-.font-size-down
-{
-	font-size: .65em;
-	text-align: center;
-	
-}
+
 header
 {
 	text-align: center;
-	background-color: #639B99FF;
+	background-color: rgb(99,155,153);
 	background-image: url("../img/bg3.png");
 	min-height: 250px;
 	display: inline-block;
@@ -46,11 +35,12 @@ header
 }
 header h1
 {
-	margin:0;
+	max-width: 80%;
 	margin-top: 25px;
+	margin: 0 auto;
 	font-size: 5em;
 	font-family: Optima, Segoe,  'Segoe UI', Candara, Calibri, Arial, sans-serif;
-	color: #DDDDDDFF;
+	color: #DDDDDD;
 }
 
 header i
@@ -60,7 +50,7 @@ header i
 }
 header .fa-github-square, .fa-facebook-square
 {
-	color: #DDDDDDFF;
+	color: #DDDDDD;
 	font-size: 2.5em;
 }
 
@@ -69,7 +59,7 @@ nav
 	
 	text-align: right;
 	max-width: 100%;
-	background-color: #1C1C1CFF;
+	background-color: #1C1C1C;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	
@@ -107,14 +97,13 @@ aside p
 	font-size: .9em;
 }
 
-.left-pane
+.main-column
 {
 	
-	color: #262626FF;
 	font-size: 1.5em;
 }
 
-article .left-pane a
+article .main-column a
 {
 	
 	text-decoration: none;
@@ -129,8 +118,8 @@ article .about
 	font-size: 1em;
 	text-align: left;
 	margin:0 auto;
-	margin-bottom: 5%;
 	margin-top: 2.5%;
+	margin-bottom: 2.5%;
 	
 }
 
@@ -148,64 +137,69 @@ article .about p
 }
 article .meeting-info
 {
-	max-width: 70%;
+	max-width: 65%;
 	margin: 0 auto;
 	margin-bottom: .5%;
 	text-align: center;
+	font-size: .80em;
 
+}
+
+article .meeting-info h3
+{
+	margin: 0;
+	margin-bottom: 5px;
 }
 article .meeting-info p
 {
 	margin: 0;
+
 }
-footer *
-{
-	margin: 0;
-	font-size: .8em;
-	padding: 0;
-	color: white;
-}
+
 footer
 {
-	display: inline-flex;
+	display: inline-block;
 	width: 100%;
-	position: relative;
-	background-color: #1C1C1CFF;
-	height: 225px;
+	background-color: #1C1C1C;
 	font-size: 12pt;
+	text-align: center;
+	color: white;
 
 }
 
-
-footer #copyright
+footer #copyright 
 	{	
 		display: inline-flex;
-		max-width: 100%;
+		width: 100%;
 		font-size: 1em;
-		background-color: initial;
-		margin-right:10px;
-		position: absolute;
-		bottom: 0px;
-		right: 0px;
 		padding-bottom: 5px;
-
 	}
+footer #copyright p
+{
+	text-align: right;
+	width: inherit;
+	margin-right: 5px;
+}
+
 footer #contact
 	{	
-		display: inline-flex;
-		max-width: 80%;
-		background-color: initial;
+		width: 100%;
 		margin: 0 auto;
 		margin-top: 15px;
-		font-size: 2.1em;
+		margin-bottom: 20px;
+		font-size: 1.5em;
+		margin-left: 5px;
 		
-
-
-
 	}
-#contact a
+Footer #contact h4, p
+{
+	margin: 0;
+}
+
+footer #contact a
 {
 	text-decoration: none;
+	color: white;
 }
 img
 {
