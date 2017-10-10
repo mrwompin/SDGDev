@@ -6,14 +6,14 @@ html
 }
 body 
 {
-	font-size: 16pt;
-	font-family: Calibri, Candara, Segoe, 
-	'Segoe UI', Optima, Arial, sans-serif;
-	background-color: #08353EFF;
-	background-image: url("../img/bg3.png");
+	font-family: "Courier New", Courier, monospace;
 	margin: 0;
+	background-color: #FFEEEC;
+	color:#707070FF;
+	font-size: 16pt;
+	
 }
-#wrapper
+/*#wrapper
 {
 	max-width: 90%;
 	margin: 0 auto;
@@ -21,7 +21,7 @@ body
 	border-width: 2px 4px 2px 4px;
 	border-radius: 5px 5px 5px 5px;
 	background-color: #0C525EFF;
-}
+}*/
 
 .font-size-down-center
 {
@@ -38,14 +38,40 @@ body
 header
 {
 	text-align: center;
-	background-color: black;
+	background-color: #639B99FF;
+	background-image: url("../img/bg3.png");
+	min-height: 250px;
+	display: inline-block;
+	width: 100%;
 }
+header h1
+{
+	margin:0;
+	margin-top: 25px;
+	font-size: 5em;
+	font-family: Optima, Segoe,  'Segoe UI', Candara, Calibri, Arial, sans-serif;
+	color: #DDDDDDFF;
+}
+
+header i
+{
+	margin-top: 50px;
+	margin-bottom: 10px;
+}
+header .fa-github-square, .fa-facebook-square
+{
+	color: #DDDDDDFF;
+	font-size: 2.5em;
+}
+
 nav
 {
-	color: white;
-	text-align: center;
+	
+	text-align: right;
 	max-width: 100%;
-	background-color: #0C525EFF;
+	background-color: #1C1C1CFF;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	
 }
 nav a
@@ -53,16 +79,10 @@ nav a
 	color: white;
 	text-decoration: none;
 	margin-right: 15px;
-	font-size: 1.4em;
-}
-.content
-{
-	
-	text-align: center;
-	display: inline-flex;
-	/*background-color:#08353EFF;*/
+	font-size: .95em;
 	
 }
+
 aside *
 {
 	margin: 0;
@@ -76,8 +96,9 @@ aside
 	font-size: .9em;
 	padding: 15px;
 	color: white;
-	background-color: #B1D7CD;
-	border-top: #08353EFF solid 2px;
+	background-color:#1C1C1CDE;
+	display: none;
+	
 	
 }
 aside p
@@ -85,85 +106,98 @@ aside p
 	text-indent: 10px;
 	font-size: .9em;
 }
-article
+
+.left-pane
 {
-	float:left;
+	
 	color: #262626FF;
 	font-size: 1.5em;
-	background-color: #E0EAE9;
-	border: solid #08353EFF 2px;
-	border-width: 2px 0 0 0;
-	
 }
 
-article a
+article .left-pane a
 {
-	color:#707070FF;
+	
 	text-decoration: none;
 
 }
 
-article *
-{
-	margin:0;
-	padding:0;
-}
-article p
-{
-	font-size: .85em;
-	padding: 10px;
-	max-width: 80%;
-	margin:0 auto;
-	text-align: left;
-	text-indent: 16px;
-	
-}
+
+
 article .about 
 {
-	margin-top: 5%;
-	margin-bottom: 10%;
-}
-.left-pane p
-{
-	max-width: 55%;
+	max-width: 60%;
+	font-size: 1em;
+	text-align: left;
+	margin:0 auto;
+	margin-bottom: 5%;
+	margin-top: 2.5%;
 	
-	margin: 0 auto;
+}
 
+article .about h2
+{
+	margin: 0;
+	margin-top: 15px;
+	font-size: 1.5em;
+}
+
+article .about p
+{
+	margin: 0px;
+	margin-top: 15px;
 }
 article .meeting-info
 {
-	margin-bottom: 10%;
-	margin-left: 10%;
-	margin-right: 10%;
+	
+	max-width: 70%;
+	margin: 0 auto;
+	margin-bottom: 2.5%;
+	text-align: center;
+
 }
 footer *
 {
 	margin: 0;
 	font-size: .8em;
-	color: white;
-	background-color: black;
 	padding: 0;
+	color: white;
 }
 footer
 {
-	
-	background-color: black;
-	max-width: 100%;
+	display: inline-flex;
+	width: 100%;
+	position: relative;
+	background-color: #1C1C1CFF;
+	height: 225px;
+	font-size: 12pt;
+
 }
+
 
 footer #copyright
 	{	
-		margin-right: 99%;
 		display: inline-flex;
 		max-width: 100%;
-		width: 400px;
+		font-size: 1em;
+		background-color: initial;
+		margin-right:10px;
+		position: absolute;
+		bottom: 0px;
+		right: 0px;
+		padding-bottom: 5px;
 
 	}
 footer #contact
 	{	
 		display: inline-flex;
-		width: 900px;
-		max-width: 100%;
+		max-width: 80%;
+		background-color: initial;
+		margin: 0 auto;
+		margin-top: 15px;
+		font-size: 2.1em;
+		
+
+
 
 	}
 #contact a
@@ -175,69 +209,9 @@ img
 	max-width: 100%;
 	height: auto;
 	width: 360px;
+	display: none;
 }
-@media screen and (max-width: 1200px)
-{
-	
-	.content
-	{
-		display: inline-block;
-		max-width: 100%;
-		margin:0 auto;
-	}
-	article
-	{
-		max-width: 100%;
-		border-right: initial;
-	}
-	article p
-	{
-		font-size: .95em;
-	}
-	aside
-	{
-		display: inline-block;
-		max-width: 100%;
-		float:initial;
-		margin:0 auto;
-		padding: 0;
-		background-color: #0C525EFF;
-		border: initial;
-	}
 
-	aside p 
-	{
-		text-align: center;
-		font-size: .75em;
-		margin:0 auto;
-
-	}
-	aside h3 
-	{
-		text-align: center;
-		font-size: .95em;
-	}
-	footer
-	{
-		font-size: 1em;
-	}
-
-	#contact a
-	{
-		text-align: right;
-	}
-	
-}
-@media screen and (max-width: 650px)
-{
-
-	#wrapper
-	{
-		margin: 0;
-		max-width: 100%;
-
-	}
-}
 
 
 
