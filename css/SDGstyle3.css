@@ -8,9 +8,10 @@ body
 {
 	font-family: "Courier New", Courier, monospace;
 	margin: 0;
-	background-color: #FFEEEC;
+	background-color: #222;
+	background-color: #010700FF;
 	color:#303030;	
-	font-size: 16pt;
+	font-size: 28pt;
 	
 }
 /*#wrapper
@@ -22,13 +23,56 @@ body
 	border-radius: 5px 5px 5px 5px;
 	background-color: #0C525EFF;
 }*/
+nav
+{
+	display: block;
+	width: 100%;
+	height: 120px;
+	padding: 0;
+	background-color: #1C1C1C;
+	text-align: right;
+	position: relative;
+}
+
+nav .nav-img
+{
+	height: 120px;
+	display: inline-block;
+	float:left;
+	/*background-image: url("img/grnSDG.png");*/
+}
+
+nav .nav-links
+{
+	height: auto;
+	font-size: .95em;
+	margin-right: 15px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right:0;
+}
+
+nav .nav-links a
+{
+	text-decoration: none;
+	color: white;
+	margin-top: 99%;
 
 
+	
+}
+nav img
+{
+	width: 150px;
+	height: auto;
+}
 header
 {
 	text-align: center;
 	background-color: rgb(99,155,153);
-	background-image: url("../img/bg3.png");
+	background-color: rgb(27, 93, 24);
+	background-image: url("../img/bg4.png");
 	min-height: 250px;
 	display: inline-block;
 	width: 100%;
@@ -54,58 +98,17 @@ header .fa-github-square, .fa-facebook-square
 	font-size: 2.5em;
 }
 
-nav
-{
-	
-	text-align: right;
-	max-width: 100%;
-	background-color: #1C1C1C;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	
-}
-nav a
-{
-	color: white;
-	text-decoration: none;
-	margin-right: 15px;
-	font-size: .95em;
-	
-}
 
-aside *
-{
-	margin: 0;
-	text-align: left;
-}
-
-aside
-{
-	float:left;
-	max-width: 14%;
-	font-size: .9em;
-	padding: 15px;
-	color: white;
-	background-color:#1C1C1CDE;
-	display: none;
-	
-	
-}
-aside p
-{
-	text-indent: 10px;
-	font-size: .9em;
-}
-
-.main-column
+.main
 {
 	
 	font-size: 1.5em;
-	
+	display: inline-block;
+	margin-top: 80px;
 
 }
 
-article .main-column a
+.main a
 {
 	
 	text-decoration: none;
@@ -114,76 +117,95 @@ article .main-column a
 
 
 
-article .about 
+.about 
 {
-	max-width: 60%;
-	font-size: 1em;
-	text-align: left;
+	max-width: 70%;
+	float: left;
 	margin:0 auto;
-	margin-top: 2.5%;
-	margin-bottom: 2.5%;
+	font-size: 60pt;
 	
 }
 
-article .about h2
+.about h2, .about p
 {
+	background-color: white;
+	background-color: #303030;
+	color: white;
 	margin: 0;
-	margin-top: 15px;
-	font-size: 1.5em;
-}
-
-article .about p
-{
-	margin: 0px;
-	margin-top: 15px;
-}
-article .meeting-info
-{
-	max-width: 65%;
+	padding: 0;
 	margin: 0 auto;
-	margin-bottom: 20px;
-	text-align: center;
-	font-size: .80em;
-
-
+	max-width: 80%;
+	margin: 0 auto;
+	padding: 15px;
+	
+	
 }
-article .meeting-info a
+.about h2
 {
-	color:#303030;
-	text-decoration: none;
+	font-size: 1.5em;
+	border-radius: 5px 5px;
 }
-article .meeting-info h3
+
+.about p
+{
+	
+	font-size: .75em;
+	border-radius: 0 0 5px 5px;
+}
+.meeting-info
+{
+
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	clear:left;
+	margin-bottom: 50px;
+	margin-top: 300px;
+	color: white;
+
+}
+.meeting-info a
+{
+	/*color:#303030;*/
+	color: white;
+
+}
+.meeting-info h3
 {
 	margin: 0;
 	margin-bottom: 5px;
 }
-article .meeting-info p
+.meeting-info p
 {
 	margin: 0;
+	font-size: .85em;
 
 }
-#officers
+.officers
 {
-	margin-bottom: 10px;
+	max-width: 30%;
+	float: left;
+	font-size: .5em;
+
 }
-#officers table
+.officers table
 {
-	max-width: 100%;
+	max-width: 60%;
 	height: auto;
 	width: auto;
 	margin: 0 auto;
-	border-radius: 10px;
+	border-radius: 5px;
 	border: solid black 2px;
 	color: white;
-	background-color: #878787;
+	background-color: #303030;
 
 }
-#officers tr, th
+.officers tr, th
 {
 	text-align: center;
 }
 
-#officers img
+.officers img
 {
 	max-width: 100%;
 	width: 90px;
