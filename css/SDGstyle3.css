@@ -9,13 +9,15 @@ body
 	font-family: "Courier New", Courier, monospace;
 	margin: 0;
 	background-color: #222;
-	background-color: #010700FF;
-	background-color: #151412FF;
-	color:#303030;	
+	background-color: #101310;
 	color: #E0FFE0;
 	font-size: 16pt;
-	min-width: 360px;
-	
+	min-width: 360px;	
+}
+
+body, nav, footer
+{
+	background-image: url("../img/broken-noise.png");
 }
 /*#wrapper
 {
@@ -135,7 +137,6 @@ header a:hover
 }
 
 
-
 .about 
 {
 	max-width: 65%;
@@ -204,7 +205,8 @@ header a:hover
 }
 .meeting-info p
 {
-
+	width: 90%;
+	margin: 0 auto;
 	
 
 }
@@ -261,12 +263,13 @@ footer #copyright
 		width: 100%;
 		font-size: .8em;
 		padding-bottom: 5px;
+		margin-left: 10px;
 	}
 footer #copyright p
 {
-		margin-right: 5px;
+		
 		width: inherit;
-		text-align: right;
+		text-align: left;
 
 }
 
