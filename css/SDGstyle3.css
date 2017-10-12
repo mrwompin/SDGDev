@@ -10,7 +10,9 @@ body
 	margin: 0;
 	background-color: #222;
 	background-color: #010700FF;
+	background-color: #151412FF;
 	color:#303030;	
+	color: #E0FFE0FF;
 	font-size: 28pt;
 	
 }
@@ -30,6 +32,7 @@ nav
 	height: 120px;
 	padding: 0;
 	background-color: #1C1C1C;
+	background-color: #0C0C0C;
 	text-align: right;
 	position: relative;
 }
@@ -38,8 +41,9 @@ nav .nav-img
 {
 	height: 120px;
 	display: inline-block;
+	margin-left: 15px;
 	float:left;
-	/*background-image: url("img/grnSDG.png");*/
+	/*background-image: url("../img/grnSDG.png");*/
 }
 
 nav .nav-links
@@ -56,12 +60,16 @@ nav .nav-links
 nav .nav-links a
 {
 	text-decoration: none;
-	color: white;
+	color: inherit;
 	margin-top: 99%;
-
-
-	
 }
+
+nav .nav-links a:hover
+{
+	color: #3BA828FF;
+	transition-duration: .75s;
+}
+
 nav img
 {
 	width: 150px;
@@ -84,17 +92,18 @@ header h1
 	margin: 0 auto;
 	font-size: 5em;
 	font-family: Optima, Segoe,  'Segoe UI', Candara, Calibri, Arial, sans-serif;
-	color: #DDDDDD;
+	color: #E0FFE0FF;
 }
 
 header i
 {
 	margin-top: 50px;
 	margin-bottom: 10px;
+
 }
-header .fa-github-square, .fa-facebook-square
+header .fa-github-square, header .fa-facebook-square
 {
-	color: #DDDDDD;
+	color: #E0FFE0FF;
 	font-size: 2.5em;
 }
 
@@ -102,7 +111,7 @@ header .fa-github-square, .fa-facebook-square
 .main
 {
 	
-	font-size: 1.5em;
+	font-size: 38pt;
 	display: inline-block;
 	margin-top: 80px;
 
@@ -128,9 +137,9 @@ header .fa-github-square, .fa-facebook-square
 
 .about h2, .about p
 {
-	background-color: white;
-	background-color: #303030;
-	color: white;
+	/*background-color: white;
+	background-color: #2D392C;*/
+	
 	margin: 0;
 	padding: 0;
 	margin: 0 auto;
@@ -155,19 +164,20 @@ header .fa-github-square, .fa-facebook-square
 .meeting-info
 {
 
-	width: 90%;
+	width: 95%;
 	margin: 0 auto;
 	text-align: center;
 	clear:left;
 	margin-bottom: 50px;
-	margin-top: 300px;
-	color: white;
+	margin-top: 200px;
+	font-size: 24pt;
+	
 
 }
 .meeting-info a
 {
 	/*color:#303030;*/
-	color: white;
+	color: inherit;
 
 }
 .meeting-info h3
@@ -195,9 +205,10 @@ header .fa-github-square, .fa-facebook-square
 	width: auto;
 	margin: 0 auto;
 	border-radius: 5px;
-	border: solid black 2px;
-	color: white;
+	
+	color: inherit;
 	background-color: #303030;
+	background-color: #2E322E;
 
 }
 .officers tr, th
@@ -222,9 +233,10 @@ footer
 	display: inline-block;
 	width: 100%;
 	background-color: #1C1C1C;
+	background-color: #0C0C0C;
 	font-size: 12pt;
 	text-align: center;
-	color: white;
+	color: inherit;
 
 }
 
@@ -260,7 +272,7 @@ footer #contact h4, p
 footer #contact a
 {
 	text-decoration: none;
-	color: white;
+	color: inherit;
 }
 header img
 {
