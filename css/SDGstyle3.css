@@ -38,6 +38,7 @@ nav
 	text-align: right;
 	position: relative;
 	font-size: 16pt;
+	padding: 3px;
 }
 
 nav .nav-img 
@@ -64,13 +65,13 @@ nav .nav-links a
 	text-decoration: none;
 	color: inherit;
 	margin-top: 99%;
-	font-size: ;
+	
 }
 
 nav .nav-links a:hover
 {
 	color: #3BA828;
-	transition-duration: .75s;
+	transition-duration: .35s;
 }
 
 nav img
@@ -86,14 +87,14 @@ header
 	background-color: rgb(99,155,153);
 	background-color: rgb(27, 93, 24);
 	background-image: url("../img/bg4.png");
-	min-height: 250px;
 	display: inline-block;
 	width: 100%;
 	font-size: 3em;
+	margin-bottom: 20px;
 }
 header h1
 {
-	max-width: 100%;
+	
 	margin-top: 25px;
 	margin: 0 auto;
 	font-family: Optima, Segoe,  'Segoe UI', Candara, Calibri, Arial, sans-serif;
@@ -116,17 +117,14 @@ header a
 header a:hover
 {
 	color: #3BA828;
-	transition-duration: .5s;
+	transition-duration: .35s;
 }
 
 
 .main
 {
 	display: inline-block;
-	margin-top: 80px;
-	margin-bottom: 80px;
-
-
+	margin-bottom: 40px;
 }
 
 .main a
@@ -143,7 +141,7 @@ header a:hover
 	float: left;
 	margin:0 auto;
 	font-size:2em;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	text-align: left;
 	hyphens: auto;
 	-webkit-hyphens: auto;
@@ -155,24 +153,20 @@ header a:hover
 	padding: 0;
 	margin: 0 auto;
 	max-width: 80%;
-	margin: 0 auto;
 	padding: 15px;	
 }
 
 .about h2
 {
-	/*border-radius: 5px 5px 0 0;
-	border: solid #2E322E;
-	border-width: 2px 2px 0 2px;*/\
+	
 	text-transform: uppercase;
 
 }
 
 .about p
 {
-	/*border-radius: 0 0 5px 5px;
-	border: solid #2E322E;
-	border-width: 0px 2px 2px 2px;*/
+	text-indent: 10px;
+
 }
 
 .meeting-info
@@ -181,7 +175,7 @@ header a:hover
 	max-width: 35%;
 	text-align: center;
 	font-size: .95em;
-	float:right;
+	float:left;
 	
 
 }
@@ -220,14 +214,11 @@ header a:hover
 .officers table
 {
 	
-	height: auto;
+	
 	width: 95%;
 	margin: 0 auto;
 	border-radius: 5px;
 	color: inherit;
-	/*background-color: #2E322E;*/
-	/*border: solid 2px #2E322E;*/
-
 }
 .officers tr, th
 {
@@ -237,11 +228,11 @@ header a:hover
 .officers img
 {
 	max-width: 100%;
-	width: 90px;
 	max-height: 100%;
+	width: 90px;
 	height: 90px;
 	border-radius: 10px;
-	background-color: black;
+	background-color: #1C1C1C;
 }
 
 
@@ -293,14 +284,6 @@ footer #contact a
 	text-decoration: none;
 	color: inherit;
 }
-header img
-{
-	max-width: 100%;
-	height: auto;
-	width: 360px;
-	display: none;
-}
-
 
 @media screen and (max-width: 1050px)
 {
@@ -310,10 +293,7 @@ header img
 		font-size: 14pt;
 	}
 	
-	.main
-	{
-		margin-top: 30px;
-	}
+
 	.about
 	{
 		max-width: 100%;
