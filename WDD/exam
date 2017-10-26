@@ -1,0 +1,18 @@
+stripslashes(); - takes a string as an argument and removes occurences of '\'. Used for
+removing slashes added with addslashes()
+
+strip_tags(); - takes  string as argument and removes occurences of html tags. Optional
+parameter are tags that are acceptable. Used to get raw string information from an html
+string.
+
+strstr(); - takes for argument a haystack (string to search) and a needle (string to find).
+After finding the first occurence of the string function returns from the first occurence of a
+string to the end of the haystack. This function could be used to parse file paths.
+
+strtotime(); - takes a string containing an english date format and an integer containing a
+timestamp and will attempt to parse it and return a timestamp relative to the given timestamp.
+Can be used to get and return the current time, as well as for calculating dates future or
+past.
+
+addslashes(); - takes a string as an argument and returns a string with a '\' infront of
+('"/NULL). This is used in place of magic quotes which were deprecated as of php 5.4 
