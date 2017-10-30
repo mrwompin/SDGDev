@@ -1,0 +1,5 @@
+./home.php: line 1: DOCTYPE: No such file or directory
+./home.php: line 2: html: No such file or directory
+./home.php: line 3: head: No such file or directory
+./home.php: line 4: syntax error near unexpected token `<'
+./home.php: line 4: `  <script src="https://use.fontawesome.com/4c9c134f39.js"></script>'
