@@ -12,7 +12,8 @@ class Template
 	private $modules;
 	private $styles;
 	private $html;
-	
+
+// __INVOKE() - ENTRY POINT FOR TEMPLATE
 	public function __invoke()
 	{
 		$filename = basename(__FILE__, '.php');
@@ -38,30 +39,22 @@ class Template
 		$scripts = $this->LoadScripts();
 		$styles = $this->LoadStyles();
 		$modules = $this->LoadModules();
+		$name = $this->name;
 		$page = <<<PAGE
-			<!DOCTYPE html>
-			<html lang="en-US">
-			<head>
-			$scripts
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<meta charset="UTF-8"/>
-			<title>SDG Home</title>
-			$styles
-			</head>
-			<body>
-			$modules
-			<footer>
-			<section id="contact">
-			<h4>Contact:&nbsp;</h4>
-			<p>President Namey McNamerson&nbsp;</p>
-			<p><a href="mailto:MR_prezzz@dudeguy.com">MR_prezzz@dudeguy.com</a></p>
-			</section>
-			<section id="copyright">
-			<p>&copy; 2017 SSC Software Development Guild</p>
-			</section>
-			</footer>
-			</body>
-			</html>
+<!DOCTYPE html>
+	<html lang="en-US">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8"/>
+		<title>SDG $name</title>
+		$scripts
+		$styles
+	</head>
+	<body>
+$modules
+<!--CLOSING TAGS-->
+	</body>
+	</html>
 PAGE;
 		return $page;
 	}
@@ -92,10 +85,12 @@ PAGE;
 	private function LoadModules()
 	{
 		$html = "";
-		$mod = "\n";
+		//$mod = "\n";
+		$mod = "";
 		$modules = $this->modules;
 		foreach ($modules as $m) {
 			$mod = new $m;
+			$html .= "<!--" . $m . "-->\n";
 			$html .= $mod->html . "\n";
 		}
 		return $html;
