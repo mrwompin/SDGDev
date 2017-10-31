@@ -1,36 +1,35 @@
 #!/usr/bin/env php
 <?php
+require_once('./lib/start.php');
+$template = new Template;
+$template();
+
 class Template
 {
-// STYLE CONFIGUATIONS
-	private $styles = [
-		"css/Style.css",
-		"css/SDG-Style.css"
-	];
-
-// SCRIPT CONFIGURATIONS
-	private $scripts = [
-		// LOAD JS SCRIPTS HERE
-		"https://use.fontawesome.com/4c9c134f39.js"
-	];
-
-// MODULE CONFIGURATIONS
-	private $modules = [
-		// LOAD MODULES HERE
-		
-	];
-
-// HTML
-	public $html = "";
-
-// __CONSTRUCT() - BUILDS PAGE WHEN CALLED
-	public function __construct()
+// PROPERTIES
+	private $scripts;
+	private $name;
+	private $modules;
+	private $styles;
+	private $html;
+	
+	public function __invoke()
 	{
-		// $args = func_get_args();
-		// $this->modules = $args[modules];
-		// $this->styles = $args[styles];
-		// $this->scripts = $args[scripts];
+		$filename = basename(__FILE__, '.php');
+		if ($filename == '.php') {
+			$filename = null;
+		}
+		echo $filename;
+		$json = file_get_contents('json/' . $filename . '.json');
+		$config = json_decode($json,true);
+		$this->name = $config['Name'];
+		$this->scripts = $config['Scripts'];
+		$this->modules = $config['Modules'];
+		$this->styles = $config['Styles'];
 		$this->html =  $this->BuildPage();
+
+		file_put_contents('./html/'. $filename . '.html',$this->html);
+		//file_put_contents('../app/html/' . $this->filename . 'test.html', $this->html);
 	}
 
 // BUILDPAGE() - CREATES OPENING HTML WITH CSS AND SCRIPT PAGES
@@ -89,21 +88,18 @@ PAGE;
 		return $html;
 	}
 
-// LOADMODULES() - RETURNS MODULES IN $MODULES
+// LOADMODULES() - RETURNS MODULES
 	private function LoadModules()
 	{
+		$html = "";
+		$mod = "\n";
 		$modules = $this->modules;
-		$html = null;
-		foreach ($modules as $m){
-			$module = new $m;
-			$html += $module;
+		foreach ($modules as $m) {
+			$mod = new $m;
+			$html .= $mod->html . "\n";
 		}
 		return $html;
 	}
-
 }
-
-$test = new Template();
-echo $test->html;
 ?>
 

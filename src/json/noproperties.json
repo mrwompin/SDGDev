@@ -1,0 +1,12 @@
+{
+	"Name": "Home",
+	"Styles": [
+		"css/Default.css"
+	],
+	"Scripts": [
+		"https://use.fontawesome.com/4c9c134f39.js"
+	],
+	"Modules": [
+		"SDGHeader"
+	]
+}

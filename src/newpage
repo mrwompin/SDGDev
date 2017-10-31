@@ -1,0 +1,3 @@
+#!/bin/bash
+cp .php $1.php
+cp json/.json json/$1.json
